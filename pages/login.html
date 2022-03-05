@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./login.css" rel="stylesheet">
+  <title>Hurry Please</title>
+</head>
+<body class="h-screen w-screen transition ease-in duration-500">
+<section class = 'flex flex-col  bg-gray-800 h-full '>
+  <!--  navbar-->
+  <div class="h-20 w-screen bg-red-500">
+    <h1 class = "text-white font-SyneOne text-4xl pt-4 text- w-full text-center my-auto"><strike>Classified</strike></h1>
+  </div>
+  <div class = 'flex h-full'>
+    <!-- left half of the whatsapp contacts list -->
+    <div class = 'w-1/5 h-full space-y-10 flex flex-col justify-around border-r-2 border-red-500'>
+      <div class ='hover:text-red-500 cursor-pointer font-SyneOne text-white text-3xl pl-10 hover:animate-bounce'> General </div>
+      <div class ='hover:text-red-500 cursor-pointer font-SyneOne text-white text-3xl pl-10 '> Major </div>
+      <div class ='hover:text-red-500 cursor-pointer font-SyneOne text-white text-3xl pl-10 '> Brigadier </div>
+      <div class ='hover:text-red-500 cursor-pointer font-SyneOne text-white text-3xl pl-10 '> Lieutenant </div>
+      <div class ='hover:text-red-500 cursor-pointer font-SyneOne text-white text-3xl pl-10 '> Cheif Air Marshal</div>
+      <div class ='hover:text-red-500 cursor-pointer font-SyneOne text-white text-3xl pl-10 '> Prime Minister </div>
+    </div>
+    <!-- right half to message composing -->
+    <div class = 'h-full  w-4/5 font-SyneOne flex flex-col  text-white'>
+    <div class='h-1/2 w-full text-center flex flex-col justify-evenly border-b-2 border-red-500'>
+      <h1 class="w-full text-3xl text-red-500">Message</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nemo asperiores iusto suscipit eveniet ex. Sequi earum a blanditiis modi, exercitationem molestiae accusantium laborum doloribus corrupti, illum recusandae nisi voluptates nam! Neque quod quis eius nisi error. Optio voluptate, soluta, unde neque magnam sint eveniet animi temporibus expedita ducimus aliquid quibusdam, fuga reiciendis. Laudantium dolor assumenda, beatae non sunt ab impedit blanditiis facere. Error alias voluptates asperiores non nam, dicta repellat voluptatibus, pariatur numquam autem facilis nihil mollitia ut dignissimos porro vero sint quo doloremque officia? Ab nobis aut officiis sit quam sapiente debitis asperiores, nihil voluptatum. Dicta, earum et!</p>
+    </div>
+    <div class='h-1/2 w-full text-center flex flex-col justify-evenly border-t-2 border-red-500'>
+      <h1 class="w-full text-3xl text-red-500">Send</h1>
+      <form action="https://www.google.com" autocomplete="off" method="post" class="text-red-500">
+        <input type="text" name="to" id="to" class="bg-transparent border-red-500 focus:outline-none" placeholder="Send to... ">
+        <input type="password" name="to" id="to" class="bg-transparent border-red-500 focus:outline-none" placeholder="Message">
+        <button type="submit" class = 'bg-red-500 px-10 py-2  rounded-full text-gray-800 animate-pulse'>Send</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
