@@ -20,6 +20,7 @@
   "homepage": "https://github.com/Siddhant-sarkar/Calssified#readme",
   "dependencies": {
     "@arcana/auth": "^0.0.8",
+    "alert": "^5.0.10",
     "express": "^4.17.3",
     "mongoose": "^6.2.4"
   }

@@ -1,8 +1,12 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+let alert = require('alert'); 
+
 // const db = require('./src/db/conn')
-const db = require('./db/conn')
+const db = require('./db/conn');
+const { rmSync } = require('fs');
+const { jsonp } = require('express/lib/response');
 const port = process.env.PORT || 5050;
 
 
@@ -23,7 +27,10 @@ app.post('/login',(req,res)=>{
   if(k.name ===user && k.password ===pass){
     res.status(200).sendFile(pth);
   }else{
-    alert('Mf Fuck off!!');
+    const pth = path.join(__dirname,"../public/index.html");
+    alert("Fuck of mf");
+    res.status(300).sendFile(pth);
+    
   }
 })
 
