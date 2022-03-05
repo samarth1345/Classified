@@ -8,15 +8,23 @@ const port = process.env.PORT || 5050;
 
 app.use(express.static('./public'));
 // app.use('view engine','hbs');
+app.use(express.urlencoded({extended:false}));
 
 app.get('/',(req,res)=>{
   // res.render('index');
   console.log(__dirname)
 })
-app.get('/login',(req,res)=>{
+let user = 'Sid';
+let pass = 'xxxx'
+app.post('/login',(req,res)=>{
   const pth = path.join(__dirname,"../public/login.html");
-  console.log(pth)
-  res.status(200).sendFile(pth);
+  const k = req.body;
+  console.log(req.body);
+  if(k.name ===user && k.password ===pass){
+    res.status(200).sendFile(pth);
+  }else{
+    alert('Mf Fuck off!!');
+  }
 })
 
 app.listen(port,()=>{
