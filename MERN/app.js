@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const db = require('../MERN/src/db/conn')
 const port = process.env.PORT || 5050;
 
 
