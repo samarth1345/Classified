@@ -28,7 +28,7 @@ app.post('/login',(req,res)=>{
     res.status(200).sendFile(pth);
   }else{
     const pth = path.join(__dirname,"../public/index.html");
-    alert("Fuck of mf");
+    alert("Fuck off mf");
     res.status(300).sendFile(pth);
     
   }
