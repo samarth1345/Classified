@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/index.css" rel="stylesheet">
+</head>
+<body style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKtlvbes_QxWMkNdi0RlGYLtOO8D6qtd2zgi8RVaqJCFTNQZLdlb2KW-ojSEveZSMM6lI&usqp=CAU')" class="bg-fixed bg-contain b ">
+<section class = 'flex flex-col  bg-gray-800 h-screen'>
+  <!--  navbar-->
+  <div class="h-20 w-screen bg-red-500">
+    <h1 class = "text-white font-SyneOne text-4xl pt-4 text- w-full text-center my-auto"><strike>Classified</strike></h1>
+  </div>
+  <!-- login section -->
+  <div class = "flex flex-col items-center h-full justify-around">
+    <!-- merces Lettifer -->
+    <div class=" flex flex-col justify-center text-center h-2/5 space-y-7">
+      <h1 class="text-white text-5xl font-SyneOne"><span class = "text-red-500">Merces </span>Letifer</h1>
+      <h1 class="text-white text-5xl font-SyneOne"><strike>Lethal</strike> <span class = "text-red-500">Trade</span></h1>
+    </div>
+    <!--  Form section-->
+    <form action="/login" method="get" autocomplete="off" class="h-3/5 text-white font-SyneOne flex flex-col space-y-10 items-center text-xl ">
+      <!-- <div><label  for="name">Please enter your name</label></div> -->
+      <div class = "border-red-500 border px-10 py-2 rounded-full "><input class = "bg-transparent focus:outline-none" placeholder="Name" type="text" name="name" id="name"></div>
+      <!-- <div><label for="password">Please enter your password</label></div> -->
+      <div class = "border-red-500 border px-10 py-2 rounded-full"><input class = "bg-transparent border-red-500 focus:outline-none" placeholder="Password" type="password" name="password" id="pass"></div>
+      <button class = "bg-red-500 px-10 py-2  rounded-full animate-pulse" type="submit">SUBMIT</button>
+    </form>
+  </div>
+</section>
+</body>
+</html>

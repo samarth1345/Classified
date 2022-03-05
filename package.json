@@ -4,12 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "goo": "nodemon ./MERN/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Siddhant-sarkar/Calssified.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Siddhant-sarkar/Calssified/issues"
+  },
+  "homepage": "https://github.com/Siddhant-sarkar/Calssified#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "mongoose": "^6.2.4"
   }
 }
